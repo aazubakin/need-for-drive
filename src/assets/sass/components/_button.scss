@@ -1,33 +1,74 @@
 .btn {
   &:link {
+    font-weight: 500;
+    font-size: 1.8rem;
     color: $color-white;
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    text-align: center;
+    padding: 1.5rem 0 1.1rem;
+    min-width: 12rem;
     display: inline-block;
-    border-radius: 10rem;
-    transition: all 0.2s;
-    position: relative;
-    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    background: linear-gradient(90deg, $color-primary, $color-primary-dark);
+    background-blend-mode: darken;
+    cursor: url("~@/assets/icons/Pointer.svg") 2 2, pointer;
+  }
+  &:visited {
+    color: $color-white;
+    background: linear-gradient(
+      90deg,
+      darken($color-primary, 10%),
+      darken($color-primary-dark, 10%)
+    );
   }
 
-  // &:hover {
-  //   transform: translateY(3px);
-  //   box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-  //   &::after {
-  //     transform: scale(1.5);
-  //     opacity: 0;
-  //   }
-  // }
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      darken($color-primary, 10%),
+      darken($color-primary-dark, 10%)
+    );
+  }
 
-  // &:active {
+  &:active {
+    color: $color-white;
+    background: linear-gradient(
+      90deg,
+      darken($color-primary, 20%),
+      darken($color-primary-dark, 20%)
+    );
+  }
 
-  // }
+  &--disabled:link {
+    background: $color-light-grey;
+  }
+}
+.menu-btn {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  // &--white {
-  //   background-color: $color-white;
-  //   color: $color-grey-dark;
-  //   &::after {
-  //     background-color: $color-white;
-  //   }
-  // }
+.language-btn {
+  &:link,
+  &:visited {
+    color: $color-primary;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px;
+    cursor: url("~@/assets/icons/Pointer.svg") 2 2, pointer;
+    margin-bottom: 1.5rem;
+  }
+  &:hover {
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    color: $color-white;
+  }
+  &:active {
+    color: $color-primary;
+  }
 }

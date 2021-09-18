@@ -1,4 +1,3 @@
-
 *,
 *::after,
 *::before {
@@ -14,4 +13,5 @@ html {
 
 body {
   box-sizing: border-box;
+  cursor: url("~@/assets/icons/Vector.svg") 2 2, default;
 }
