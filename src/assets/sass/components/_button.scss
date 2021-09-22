@@ -11,7 +11,7 @@
     border-radius: 0.8rem;
     background: linear-gradient(90deg, $color-primary, $color-primary-dark);
     background-blend-mode: darken;
-    cursor: url("~@/assets/icons/Pointer.svg") 2 2, pointer;
+    cursor: url('~@/assets/icons/Pointer.svg') 2 2, pointer;
   }
   &:visited {
     color: $color-white;
@@ -42,6 +42,9 @@
   &--disabled:link {
     background: $color-light-grey;
   }
+  &__book {
+    width: 25rem;
+  }
 }
 .menu-btn {
   text-align: center;
@@ -60,7 +63,7 @@
     font-size: 1.3rem;
     font-weight: 700;
     padding: 10px;
-    cursor: url("~@/assets/icons/Pointer.svg") 2 2, pointer;
+    cursor: url('~@/assets/icons/Pointer.svg') 2 2, pointer;
     margin-bottom: 1.5rem;
   }
   &:hover {

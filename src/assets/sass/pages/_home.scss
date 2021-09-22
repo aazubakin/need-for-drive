@@ -1,0 +1,29 @@
+.home {
+  height: 100vh;
+  display: flex;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  justify-content: space-between;
+  padding: 3.2rem 6.4rem;
+}
+
+.main {
+  &-title {
+    font-size: 7rem;
+    font-weight: 700;
+    &__title--below {
+      color: $color-primary;
+    }
+  }
+  &__subtitle {
+    font-size: 2.6rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: $color-grey;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+}

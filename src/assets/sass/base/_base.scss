@@ -13,5 +13,10 @@ html {
 
 body {
   box-sizing: border-box;
-  cursor: url("~@/assets/icons/Vector.svg") 2 2, default;
+  cursor: url('~@/assets/icons/Vector.svg') 2 2, default;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 700;
 }

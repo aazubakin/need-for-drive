@@ -1,16 +1,17 @@
-@import "abstract/functions";
-@import "abstract/mixins";
-@import "abstract/variables";
+@import 'abstract/functions';
+@import 'abstract/mixins';
+@import 'abstract/variables';
 
-@import "base/base";
-@import "base/animations";
-@import "base/typographi";
-@import "base/utilities";
+@import 'base/base';
+@import 'base/animations';
+@import 'base/typographi';
+@import 'base/utilities';
 
-@import "components/button";
-@import "components/menu";
-@import "components/link";
-@import "pages/home";
-@import "layout/header";
-@import "layout/sidebar";
-@import "layout/grid.scss";
+@import 'components/button';
+@import 'components/menu';
+@import 'components/link';
+@import 'pages/home';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/grid.scss';
