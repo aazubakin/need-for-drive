@@ -45,6 +45,40 @@
   &__book {
     width: 25rem;
   }
+  &__slide {
+    width: 16.4rem;
+    &:link {
+      background: linear-gradient(
+        90deg,
+        $color-btn-slide-1,
+        $color-btn-slide-2
+      );
+    }
+    &:visited {
+      color: $color-white;
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-1, 10%),
+        darken($color-btn-slide-2, 10%)
+      );
+    }
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-1, 10%),
+        darken($color-btn-slide-2, 10%)
+      );
+    }
+    &:active {
+      color: $color-white;
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-1, 15%),
+        darken($color-btn-slide-2, 15%)
+      );
+    }
+  }
 }
 .menu-btn {
   text-align: center;
