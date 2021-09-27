@@ -1,0 +1,133 @@
+@media (max-width: $layout-breakpoint-desktop-min) {
+  .modal-mask-2nd {
+    width: 57%;
+  }
+  .main-container {
+    width: 60vw;
+    &-wrapper {
+      width: 48.5rem;
+    }
+  }
+}
+@media (max-width: $layout-breakpoint-tablet) {
+  .modal-mask-2nd {
+    width: 100%;
+  }
+  .swiper {
+    display: none;
+  }
+  .main-container {
+    width: 100vw;
+    &-wrapper {
+      width: 61.5rem;
+    }
+  }
+}
+
+@media (max-width: $layout-breakpoint-mobil) {
+  .modal-mask-2nd {
+    .language-btn {
+      display: block;
+      position: absolute;
+      top: 90%;
+      left: 5%;
+    }
+  }
+  .modal-wrapper {
+    vertical-align: top;
+  }
+  .modal-container {
+    margin-top: 8rem;
+  }
+  .modal__item {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  .aside {
+    height: 6.5rem;
+    background-color: $color-white;
+    position: absolute;
+  }
+  .language-btn {
+    display: none;
+  }
+  .swiper {
+    display: none;
+  }
+  .main-container {
+    justify-content: flex-start;
+    width: 100vw;
+    &-wrapper {
+      width: 100%;
+      padding: 0;
+      padding-top: 1.6rem;
+    }
+  }
+  h1 {
+    font-size: 3.2rem;
+  }
+  .main {
+    margin: 0 auto 11rem;
+    &-title {
+      margin: 0 auto;
+      width: 28.8rem;
+      font-size: 3.2rem;
+    }
+    &__subtitle {
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: $color-grey;
+      margin: 1.6rem auto 3.2rem;
+      width: 28.8rem;
+    }
+    .btn {
+      width: 32rem;
+      border-radius: 0;
+    }
+  }
+  .header {
+    flex-wrap: wrap;
+    margin-left: 10rem;
+    justify-content: flex-end;
+    &__title {
+      margin-right: 1.6rem;
+    }
+    &-city {
+      margin-top: 0.8rem;
+      margin-right: 1.6rem;
+    }
+  }
+  .footer {
+    background-color: $color-black;
+    height: 7.2rem;
+    display: grid;
+    justify-content: end;
+    &__copyright {
+      grid-row: 2;
+      margin-bottom: 1.6rem;
+      margin-right: 1.6rem;
+      margin-top: 0.8rem;
+    }
+    &__phone {
+      color: $color-primary;
+      justify-self: end;
+      margin-top: 1.6rem;
+      margin-right: 1.6rem;
+    }
+  }
+  .menu-btn__item {
+    &,
+    &::before,
+    &::after {
+      background-color: $color-black;
+      width: 2rem;
+      height: 3px;
+    }
+  }
+  .menu-btn {
+    &-burger {
+      margin-top: 2.5rem;
+    }
+  }
+}

@@ -2,9 +2,10 @@
 .home
   side-bar
   .main-container
-    header-block
-    home-content
-    footer-block
+    .main-container-wrapper
+      header-block
+      home-content
+      footer-block
   slider-block
 </template>
 
