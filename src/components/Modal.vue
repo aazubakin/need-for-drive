@@ -1,8 +1,8 @@
 <template lang="pug">
 transition(name="modal" mode="fade")
-  .modal-mask-1st
-    .modal-mask-2nd
-      .modal-mask-2nd__btn(@click="$emit('close')")
+  .modal-mask-main
+    .modal-mask-secondary
+      .modal-mask-secondary__btn(@click="$emit('close')")
       a.language-btn(href="#" alt="language") Eng
       .modal-wrapper
         .modal-container

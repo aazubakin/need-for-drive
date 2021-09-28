@@ -1,5 +1,5 @@
 @media (max-width: $layout-breakpoint-desktop-min) {
-  .modal-mask-2nd {
+  .modal-mask-secondary {
     width: 57%;
   }
   .main-container {
@@ -10,7 +10,7 @@
   }
 }
 @media (max-width: $layout-breakpoint-tablet) {
-  .modal-mask-2nd {
+  .modal-mask-secondary {
     width: 100%;
   }
   .swiper {
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: $layout-breakpoint-mobil) {
-  .modal-mask-2nd {
+  .modal-mask-secondary {
     .language-btn {
       display: block;
       position: absolute;

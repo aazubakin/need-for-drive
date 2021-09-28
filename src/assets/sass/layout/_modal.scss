@@ -1,4 +1,4 @@
-.modal-mask-1st {
+.modal-mask-main {
   position: fixed;
   z-index: 9998;
   top: 0;
@@ -7,7 +7,7 @@
   height: 100%;
   background-color: rgba($color-black-side, 0.8);
 }
-.modal-mask-2nd {
+.modal-mask-secondary {
   position: fixed;
   z-index: 9998;
   top: 0;
@@ -78,7 +78,7 @@
   }
 }
 
-.modal-mask-2nd {
+.modal-mask-secondary {
   .language-btn {
     display: none;
   }
