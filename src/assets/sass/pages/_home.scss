@@ -1,0 +1,34 @@
+.home {
+  height: 100vh;
+  display: flex;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 56rem;
+    height: 100%;
+    padding: 3.2rem 0;
+  }
+}
+.main {
+  &-title {
+    font-size: 7rem;
+    font-weight: 700;
+    &__title--below {
+      color: $color-primary;
+    }
+  }
+  &__subtitle {
+    font-size: 2.6rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: $color-grey;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+}
