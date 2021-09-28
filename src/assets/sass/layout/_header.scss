@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    font-size: 3rem;
+    color: $color-primary;
+    font-weight: 700;
+  }
+  &-city {
+    display: flex;
+    width: 9.4rem;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $color-grey;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.btn {
+  &:link {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: $color-white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5rem 0 1.1rem;
+    min-width: 12rem;
+    display: inline-block;
+    border-radius: 0.8rem;
+    background: linear-gradient(90deg, $color-primary, $color-primary-dark);
+    background-blend-mode: darken;
+    cursor: url('~@/assets/icons/Pointer.svg') 2 2, pointer;
+  }
+  &:visited {
+    color: $color-white;
+    background: linear-gradient(
+      90deg,
+      darken($color-primary, 10%),
+      darken($color-primary-dark, 10%)
+    );
+  }
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      darken($color-primary, 10%),
+      darken($color-primary-dark, 10%)
+    );
+  }
+
+  &:active {
+    color: $color-white;
+    background: linear-gradient(
+      90deg,
+      darken($color-primary, 20%),
+      darken($color-primary-dark, 20%)
+    );
+  }
+
+  &--disabled:link {
+    background: $color-light-grey;
+  }
+  &__book {
+    width: 25rem;
+  }
+  &__slide {
+    width: 16.4rem;
+    &:link {
+      background: linear-gradient(
+        90deg,
+        $color-btn-slide-1,
+        $color-btn-slide-2
+      );
+    }
+    &:visited {
+      color: $color-white;
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-1, 10%),
+        darken($color-btn-slide-2, 10%)
+      );
+    }
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-1, 10%),
+        darken($color-btn-slide-2, 10%)
+      );
+    }
+    &:active {
+      color: $color-white;
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-1, 15%),
+        darken($color-btn-slide-2, 15%)
+      );
+    }
+  }
+}
+.menu-btn {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  &-burger {
+    height: 2rem;
+    margin-top: 3.5rem;
+    cursor: url('~@/assets/icons/Pointer.svg') 2 2, pointer;
+  }
+}
+
+.language-btn {
+  &:link,
+  &:visited {
+    color: $color-primary;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1.6rem 1.2rem;
+    cursor: url('~@/assets/icons/Pointer.svg') 2 2, pointer;
+    margin-bottom: 1.5rem;
+  }
+  &:hover {
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    color: $color-white;
+  }
+  &:active {
+    color: $color-primary;
+  }
+}
