@@ -19,6 +19,7 @@ import TelegramIcon from '@/components/icons/TelegramIcon'
 import InstagramIcon from '@/components/icons/InstagramIcon'
 import Modal from '@/components/Modal.vue'
 import { ref } from 'vue'
+import { listMenu } from '@/utils/mocks'
 export default {
   name: 'SideBar',
   components: {
@@ -29,24 +30,6 @@ export default {
   },
   setup() {
     const showModal = ref(false)
-    const listMenu = [
-      {
-        id: 1,
-        title: 'Парковка',
-      },
-      {
-        id: 2,
-        title: 'СТРАХОВКА',
-      },
-      {
-        id: 3,
-        title: 'БЕНЗИН',
-      },
-      {
-        id: 4,
-        title: 'ОБСЛУЖИВАНИЕ',
-      },
-    ]
     return {
       showModal,
       listMenu,

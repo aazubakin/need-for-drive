@@ -2,6 +2,10 @@
 
 ## Frontend praktikum SimberSoft
 
+### Deploy: https://aazubakin.github.io/need-for-drive/#/
+
+### Проект реализуется с использованием Vue 3 and composition API
+
 ## Project setup
 
 ```
