@@ -37,7 +37,6 @@
   &-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     position: relative;
 
     /* Center slide text vertically */
@@ -53,6 +52,13 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    &__background {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+      position: absolute;
+      z-index: 9;
+      width: 100%;
+      height: 100%;
+    }
     &__img {
       position: absolute;
       display: block;

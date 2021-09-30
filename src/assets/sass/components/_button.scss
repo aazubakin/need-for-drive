@@ -45,37 +45,139 @@
   &__book {
     width: 25rem;
   }
-  &__slide {
+  &__slide-first {
     width: 16.4rem;
     &:link {
       background: linear-gradient(
         90deg,
-        $color-btn-slide-1,
-        $color-btn-slide-2
+        $color-btn-slide-first-primary,
+        $color-btn-slide-first-secondary
       );
     }
     &:visited {
       color: $color-white;
       background: linear-gradient(
         90deg,
-        darken($color-btn-slide-1, 10%),
-        darken($color-btn-slide-2, 10%)
+        darken($color-btn-slide-first-primary, 10%),
+        darken($color-btn-slide-first-secondary, 10%)
       );
     }
 
     &:hover {
       background: linear-gradient(
         90deg,
-        darken($color-btn-slide-1, 10%),
-        darken($color-btn-slide-2, 10%)
+        darken($color-btn-slide-first-primary, 10%),
+        darken($color-btn-slide-first-secondary, 10%)
       );
     }
     &:active {
       color: $color-white;
       background: linear-gradient(
         90deg,
-        darken($color-btn-slide-1, 15%),
-        darken($color-btn-slide-2, 15%)
+        darken($color-btn-slide-first-primary, 15%),
+        darken($color-btn-slide-first-secondary, 15%)
+      );
+    }
+  }
+  &__slide-second {
+    width: 16.4rem;
+    &:link {
+      background: linear-gradient(
+        90deg,
+        $color-btn-slide-second-primary,
+        $color-btn-slide-second-secondary
+      );
+    }
+    &:visited {
+      color: $color-white;
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-second-primary, 10%),
+        darken($color-btn-slide-second-secondary, 10%)
+      );
+    }
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-second-primary, 10%),
+        darken($color-btn-slide-second-secondary, 10%)
+      );
+    }
+    &:active {
+      color: $color-white;
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-second-primary, 15%),
+        darken($color-btn-slide-second-secondary, 15%)
+      );
+    }
+  }
+  &__slide-third {
+    width: 16.4rem;
+    &:link {
+      background: linear-gradient(
+        90deg,
+        $color-btn-slide-third-primary,
+        $color-btn-slide-third-secondary
+      );
+    }
+    &:visited {
+      color: $color-white;
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-third-primary, 10%),
+        darken($color-btn-slide-third-secondary, 10%)
+      );
+    }
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-third-primary, 10%),
+        darken($color-btn-slide-third-secondary, 10%)
+      );
+    }
+    &:active {
+      color: $color-white;
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-third-primary, 15%),
+        darken($color-btn-slide-third-secondary, 15%)
+      );
+    }
+  }
+  &__slide-forth {
+    width: 16.4rem;
+    &:link {
+      background: linear-gradient(
+        90deg,
+        $color-btn-slide-forth-primary,
+        $color-btn-slide-forth-secondary
+      );
+    }
+    &:visited {
+      color: $color-white;
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-forth-primary, 10%),
+        darken($color-btn-slide-forth-secondary, 10%)
+      );
+    }
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-forth-primary, 10%),
+        darken($color-btn-slide-forth-secondary, 10%)
+      );
+    }
+    &:active {
+      color: $color-white;
+      background: linear-gradient(
+        90deg,
+        darken($color-btn-slide-forth-primary, 15%),
+        darken($color-btn-slide-forth-secondary, 15%)
       );
     }
   }
