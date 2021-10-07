@@ -4,7 +4,7 @@ main.main
     .main-title__title--up {{ titleUp }}
     h1.main-title__title--below {{ titleBelow }}
   h3.main__subtitle {{ subtitle }}
-  a.btn.btn__book(href="#" alt="booking") {{ btnBook }}
+  router-link.btn.btn__book(:to="{ name: 'Location' }" alt="booking") {{ btnBook }}
 </template>
 <script>
 export default {
