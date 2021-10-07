@@ -47,3 +47,26 @@ export const listMenu = [
     title: 'ОБСЛУЖИВАНИЕ',
   },
 ]
+
+export const breadcrumbs = [
+  {
+    id: 1,
+    title: 'Местоположение',
+    link: { name: 'Location' },
+  },
+  {
+    id: 2,
+    title: 'Модель',
+    link: { name: 'Model' },
+  },
+  {
+    id: 3,
+    title: 'Дополнительно',
+    link: { name: 'Additional' },
+  },
+  {
+    id: 4,
+    title: 'Итого',
+    link: { name: 'Summary' },
+  },
+]

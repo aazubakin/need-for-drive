@@ -1,0 +1,66 @@
+.order-page {
+  display: flex;
+  height: 100vh;
+}
+.pages-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    padding: 3.2rem 0;
+  }
+}
+
+.breadcrumbs-container {
+  position: absolute;
+  width: 100%;
+  top: 10.7%;
+  border: 1px solid $color-light-grey;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  &-items-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $color-grey;
+    &:not(:last-child) {
+      margin-right: 1.6rem;
+    }
+  }
+  &__item:hover {
+    color: $color-primary;
+    cursor: $cursor-pointer;
+  }
+  &__item:not(:last-child)::after {
+    width: 0;
+    height: 0;
+    content: '';
+    cursor: $cursor-default;
+    margin-left: 2.1rem;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid $color-grey;
+  }
+}
+
+.page-container {
+  margin-top: 4.6rem;
+}
