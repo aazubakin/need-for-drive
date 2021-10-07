@@ -11,7 +11,7 @@
     border-radius: 0.8rem;
     background: linear-gradient(90deg, $color-primary, $color-primary-dark);
     background-blend-mode: darken;
-    cursor: url('~@/assets/icons/Pointer.svg') 2 2, pointer;
+    cursor: $cursor-pointer;
   }
   &:visited {
     color: $color-white;
@@ -192,7 +192,7 @@
   &-burger {
     height: 2rem;
     margin-top: 3.5rem;
-    cursor: url('~@/assets/icons/Pointer.svg') 2 2, pointer;
+    cursor: $cursor-pointer;
   }
 }
 
@@ -204,7 +204,7 @@
     font-size: 1.3rem;
     font-weight: 700;
     padding: 1.6rem 1.2rem;
-    cursor: url('~@/assets/icons/Pointer.svg') 2 2, pointer;
+    cursor: $cursor-pointer;
     margin-bottom: 1.5rem;
   }
   &:hover {

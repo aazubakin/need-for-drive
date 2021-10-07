@@ -6,6 +6,8 @@
     font-size: 3rem;
     color: $color-primary;
     font-weight: 700;
+    text-decoration: none;
+    cursor: $cursor-pointer;
   }
   &-city {
     display: flex;
