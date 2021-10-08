@@ -51,22 +51,30 @@ export const listMenu = [
 export const breadcrumbs = [
   {
     id: 1,
+    name: 'location',
     title: 'Местоположение',
     link: { name: 'Location' },
+    activeClass: true,
   },
   {
     id: 2,
+    name: 'model',
     title: 'Модель',
     link: { name: 'Model' },
+    activeClass: false,
   },
   {
     id: 3,
+    name: 'additional',
     title: 'Дополнительно',
     link: { name: 'Additional' },
+    activeClass: false,
   },
   {
     id: 4,
+    name: 'summary',
     title: 'Итого',
     link: { name: 'Summary' },
+    activeClass: false,
   },
 ]
