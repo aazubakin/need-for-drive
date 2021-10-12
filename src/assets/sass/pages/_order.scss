@@ -49,6 +49,10 @@
     color: $color-primary;
     cursor: $cursor-pointer;
   }
+  &__item--disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
   &__item:not(:last-child)::after {
     width: 0;
     height: 0;

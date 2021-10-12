@@ -41,6 +41,8 @@
 
   &--disabled:link {
     background: $color-light-grey;
+    cursor: not-allowed;
+    pointer-events: none;
   }
   &__book {
     width: 25rem;
