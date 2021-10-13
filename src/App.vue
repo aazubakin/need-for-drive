@@ -17,13 +17,11 @@ import HeaderBlock from '@/components/HeaderBlock.vue'
 import BreadcrumbsBlock from '@/components/BreadcrumbsBlock.vue'
 import { useRouter, useRoute } from 'vue-router'
 import { watch, ref, reactive } from 'vue'
-import Location from '@/views/Location.vue'
 import { breadcrumbs } from '@/utils/mocks'
 
 export default {
   name: 'Layout',
   components: {
-    Location,
     SideBar,
     HeaderBlock,
     BreadcrumbsBlock,
@@ -43,7 +41,9 @@ export default {
 
     const show = (isData) => {
       breadCrumbs.map((elem) => {
-        if (elem.name !== 'location') elem.activeClass = isData[elem.name]
+        if (elem.name !== 'location') {
+          elem.openLink = isData[elem.name]
+        }
       })
     }
 

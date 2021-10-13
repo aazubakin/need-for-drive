@@ -1,0 +1,22 @@
+.radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: $cursor-pointer;
+  margin-right: 1rem;
+  font-family: 'Roboto Light';
+  font-size: 1.4rem;
+  &__input {
+    display: none;
+  }
+  &__radio {
+    width: 1em;
+    height: 1em;
+    border: 1px solid $color-grey;
+    border-radius: 75%;
+    margin-right: 1rem;
+    padding: 2px;
+  }
+  &__input:checked + &__radio {
+    border: 3px solid $color-primary;
+  }
+}
