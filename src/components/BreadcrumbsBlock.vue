@@ -6,10 +6,12 @@
         :to="item.link" 
         v-for="item in breadcrumbs" 
         :key="item.id"
-        :class="{ 'breadcrumbs__item--disabled': !item.activeClass }"
+        @click="activeTab(item.id)"
+        :class="getClassObject(item)"
         ) {{ item.title }}
 </template>
 <script>
+import { ref, reactive } from 'vue'
 export default {
   name: 'BreadCrumbsBlock',
   props: {
@@ -17,6 +19,26 @@ export default {
       type: Array,
       default: () => [],
     },
+  },
+  setup() {
+    const activeId = ref(1)
+    const activeTab = (id) => {
+      activeId.value = id
+    }
+
+    const getClassObject = (item) => {
+      return {
+        'breadcrumbs__item--disabled': !item.openLink,
+        'breadcrumbs__item-active': activeId.value === item.id,
+        'breadcrumbs__item-previous': activeId.value > item.id,
+      }
+    }
+
+    return {
+      activeId,
+      activeTab,
+      getClassObject,
+    }
   },
 }
 </script>

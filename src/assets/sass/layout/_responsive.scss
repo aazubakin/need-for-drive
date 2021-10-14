@@ -148,6 +148,21 @@
       }
     }
   }
+  .model {
+    flex-direction: column;
+    &-order {
+      width: 100%;
+      padding-left: 0;
+    }
+    &-container {
+      width: 100%;
+      &-map {
+        .googleMap {
+          width: 100%;
+        }
+      }
+    }
+  }
   .breadcrumbs {
     &__item {
       margin-bottom: 0.5rem;
