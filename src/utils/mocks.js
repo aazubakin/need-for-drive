@@ -54,27 +54,75 @@ export const breadcrumbs = [
     name: 'location',
     title: 'Местоположение',
     link: { name: 'Location' },
-    activeClass: true,
+    openLink: true,
   },
   {
     id: 2,
     name: 'model',
     title: 'Модель',
     link: { name: 'Model' },
-    activeClass: false,
+    openLink: false,
   },
   {
     id: 3,
     name: 'additional',
     title: 'Дополнительно',
     link: { name: 'Additional' },
-    activeClass: false,
+    openLink: false,
   },
   {
     id: 4,
     name: 'summary',
     title: 'Итого',
     link: { name: 'Summary' },
-    activeClass: false,
+    openLink: false,
+  },
+]
+
+export const radioModel = [
+  {
+    id: 'all',
+    title: 'Все модели',
+  },
+  {
+    id: 'econom',
+    title: 'Эконом',
+  },
+  {
+    id: 'premium',
+    title: 'Премиум',
+  },
+]
+
+export const modelCars = [
+  {
+    id: 1,
+    title: 'ELANTRA',
+    rangePrice: '12 000 - 25 000',
+    img: 'img/model-car-1.png',
+  },
+  {
+    id: 2,
+    title: 'Hyndai, i30 N',
+    rangePrice: '12 000 - 25 000',
+    img: 'img/model-car-2.png',
+  },
+  {
+    id: 3,
+    title: 'CRETA',
+    rangePrice: '12 000 - 25 000',
+    img: 'img/model-car-3.png',
+  },
+  {
+    id: 4,
+    title: 'SONATA',
+    rangePrice: '12 000 - 25 000',
+    img: 'img/model-car-4.png',
+  },
+  {
+    id: 5,
+    title: 'CRETA',
+    rangePrice: '12 000 - 25 000',
+    img: 'img/model-car-5.png',
   },
 ]

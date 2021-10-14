@@ -36,6 +36,7 @@
     flex-wrap: wrap;
   }
   &__item {
+    text-decoration: none;
     display: flex;
     align-items: center;
     font-size: 1.4rem;
@@ -52,6 +53,12 @@
   &__item--disabled {
     cursor: not-allowed;
     pointer-events: none;
+  }
+  &__item-active {
+    color: $color-primary;
+  }
+  &__item-previous {
+    color: $color-black;
   }
   &__item:not(:last-child)::after {
     width: 0;

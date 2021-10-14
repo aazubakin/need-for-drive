@@ -1,0 +1,30 @@
+.model-car {
+  &-active {
+    border: 1px solid $color-primary !important;
+  }
+  height: 22.4rem;
+  width: 37rem;
+  &-name {
+    margin-left: 1.6rem;
+    margin-top: 1.6rem;
+    &__title {
+      font-size: 1.8rem;
+    }
+    &__price {
+      font-size: 1.4rem;
+      color: $color-grey;
+    }
+  }
+  &-image {
+    text-align: right;
+    margin-top: 3.6rem;
+    margin-right: 1.6rem;
+    &__item {
+      width: 25.6rem;
+    }
+  }
+}
+.model-car:hover {
+  border: 1px solid $color-grey;
+  cursor: $cursor-pointer;
+}

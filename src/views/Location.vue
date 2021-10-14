@@ -55,6 +55,7 @@ export default {
     const isData = computed(() => {
       emit('locationData', {
         model: point.value.length > 0 && city.value.length > 0,
+        currentTab: 'location',
       })
       return point.value.length > 0 && city.value.length > 0
     })
