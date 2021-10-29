@@ -20,19 +20,33 @@ function initGoogleMap() {
   waiting = []
 }
 
-export function showMap(canvas, lat, lng) {
+export function getLatLng(city) {
+  if (!isLoaded) {
+    waiting.push({ fn: getLatLng, arguments })
+    return
+  }
+  const geocoder = new window.google.maps.Geocoder()
+  return geocoder.geocode({ address: city }).then((result) => {
+    return {
+      lat: result.results[0].geometry.location.lat(),
+      lng: result.results[0].geometry.location.lng(),
+    }
+  })
+}
+
+export function showMap(canvas, coords) {
   if (!isLoaded) {
     waiting.push({ fn: showMap, arguments })
     return
   }
   const mapOptions = {
     zoom: 10,
-    center: new window.google.maps.LatLng(lat, lng),
+    center: new window.google.maps.LatLng(coords.lat, coords.lng),
     disableDefaultUI: true,
     zoomControl: true,
   }
   const map = new window.google.maps.Map(canvas, mapOptions)
-  const position = new window.google.maps.LatLng(lat, lng)
+  const position = new window.google.maps.LatLng(coords.lat, coords.lng)
   const marker = new window.google.maps.Marker({ position })
   marker.setMap(map)
 }

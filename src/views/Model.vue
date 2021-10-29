@@ -40,7 +40,6 @@ export default {
     const checkedValue = ref('')
     const modelCar = ref(null)
     const getCar = (model) => {
-      console.log(model)
       modelCar.value = model
     }
     return {

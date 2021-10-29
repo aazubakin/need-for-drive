@@ -6,12 +6,13 @@
         :to="item.link" 
         v-for="item in breadcrumbs" 
         :key="item.id"
-        @click="activeTab(item.id)"
+        @click="activeTab(item)"
         :class="getClassObject(item)"
         ) {{ item.title }}
 </template>
 <script>
-import { ref, reactive } from 'vue'
+import { ref, reactive, watch } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 export default {
   name: 'BreadCrumbsBlock',
   props: {
@@ -20,10 +21,16 @@ export default {
       default: () => [],
     },
   },
-  setup() {
+  setup(props) {
+    const route = useRoute()
+
+    const routeObj = props.breadcrumbs.reduce(
+      (prev, cur) => ({ ...prev, [cur.name]: cur }),
+      {}
+    )
     const activeId = ref(1)
-    const activeTab = (id) => {
-      activeId.value = id
+    const activeTab = (item) => {
+      activeId.value = item.id
     }
 
     const getClassObject = (item) => {
@@ -33,6 +40,13 @@ export default {
         'breadcrumbs__item-previous': activeId.value > item.id,
       }
     }
+
+    // watch(
+    //   () => route.name,
+    //   () => {
+    //     activeId.value = routeObj[route.name.toLowerCase()].id
+    //   }
+    // )
 
     return {
       activeId,
